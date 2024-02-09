@@ -20,7 +20,7 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<CoffeeContext>(opts =>
             opts.UseSqlServer(
-                builder.Configuration.GetConnectionString("CoffeeshopDB_EASV")));
+                builder.Configuration.GetConnectionString("CoffeeshopDB_Silas")));
         builder.Services.AddAutoMapper(typeof(Program));
         builder.Services.AddLogging();
         builder.Services.AddCors();
